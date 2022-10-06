@@ -1,2 +1,42 @@
 .Card {
+  position: relative;
+  border: 10px solid white;
+  border-radius: 20px;
+  overflow: hidden;
+
+  // Vignette effect
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.3);
+  }
+
+  &__Content {
+    margin: 50px 0;
+  }
+  // &__Title {}
+  // &__Subtitle {}
+  &__Snack {
+    margin: 10px 0;
+  }
+  &__Rating {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    width: 80%;
+    height: 50px;
+    justify-content: space-around;
+    z-index: 1;
+    border-start-end-radius: 10px;
+    border-start-start-radius: 10px;
+    align-items: center;
+    padding: 5px;
+  }
 }
