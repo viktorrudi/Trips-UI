@@ -9,13 +9,11 @@ import { getTripSubtitle } from "../features/trips/tripsPresenter";
 import { Card } from "../ui/Card/Card";
 
 export function Trip(trip: TripEntity) {
-  const subtitle = getTripSubtitle(trip);
-
   return (
     <Card backgroundImage={getImage(trip)}>
       <Card.Content>
         <Card.Title>{getName(trip)}</Card.Title>
-        <Card.Subtitle>{subtitle}</Card.Subtitle>
+        <Card.Subtitle>{getTripSubtitle(trip)}</Card.Subtitle>
         <Card.Snack
           label="Emissions offset"
           value={`${getEmissionsOffset(trip)} t CO₂e`}
