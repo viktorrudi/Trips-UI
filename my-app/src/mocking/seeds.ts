@@ -1,35 +1,31 @@
+import { FakeTrip } from "../features/trips/mocks/fakeTripGenerator";
+
 export const TRIPS_SEED = [
-  {
-    id: "1",
-    name: "Diving adventure in Egypt",
-    image: "https://picsum.photos/id/237/300",
-    emissions_offset: 3.5,
-    rating: 4,
-    count_of: {
-      countries: 3,
-      days: 1,
-    },
-  },
-  {
-    id: "2",
-    name: "Swimming with dolphins",
-    image: "https://picsum.photos/id/227/300",
-    emissions_offset: 3.5,
-    rating: 4.2,
-    count_of: {
-      countries: 1,
-      days: 2,
-    },
-  },
-  {
-    id: 3,
-    name: "I dont know",
-    image: "https://picsum.photos/id/228/300",
-    emissions_offset: 3.5,
-    rating: 1,
-    count_of: {
-      countries: 1,
-      days: 2,
-    },
-  },
+  new FakeTrip()
+    .setId("1")
+    .setName("Diving adventure in Egypt")
+    .setImage("https://picsum.photos/id/53/300")
+    .setEmissionsOffset(3.5)
+    .setRating(4)
+    .setCountriesCount(1)
+    .setDaysCount(4)
+    .build(),
+  new FakeTrip()
+    .setId("2")
+    .setName("Swimming with dolphins")
+    .setImage("https://picsum.photos/id/101/300")
+    .setEmissionsOffset(2.35)
+    .setRating(2.5)
+    .setCountriesCount(2)
+    .setDaysCount(5)
+    .build(),
+  new FakeTrip()
+    .setId("3")
+    .setName("Trip to the moon")
+    .setImage("https://picsum.photos/id/102/300")
+    .setEmissionsOffset(5000)
+    .setRating(1)
+    .setCountriesCount(1)
+    .setDaysCount(25)
+    .build(),
 ];
