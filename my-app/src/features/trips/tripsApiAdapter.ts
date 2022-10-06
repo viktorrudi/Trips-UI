@@ -1,4 +1,4 @@
-import { FAKE_API_URI } from "../../global/fakeApi";
+import { FAKE_API_URI } from "../../global/api";
 import { TripsHttpResponse } from "./tripsPorts";
 
 export function getTrips(): Promise<TripsHttpResponse> {
