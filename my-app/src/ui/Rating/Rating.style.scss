@@ -1,0 +1,8 @@
+.Rating {
+  .star-svg {
+    // Fixes for library bug
+    display: inline !important;
+    position: relative;
+    top: 3px;
+  }
+}
