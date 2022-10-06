@@ -1,15 +1,24 @@
 import { Box, Text, TextProps } from "@chakra-ui/react";
 
+import "./Snack.style.scss";
+
 type SnackProps = {
   children: JSX.Element[];
   className?: string;
 };
 function Snack({ className, ...props }: SnackProps) {
-  return <Box className={`${className} Snack`} {...props} />;
+  return (
+    <Box
+      rounded="lg"
+      bg="gray.900"
+      className={`${className} Snack`}
+      {...props}
+    />
+  );
 }
 
 function TextContent(props: TextProps) {
-  return <Text {...props} />;
+  return <Text className="Snack__Text" color="white" {...props} />;
 }
 
 type HeadProps = { children: JSX.Element };

@@ -1,0 +1,10 @@
+.Snack {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  &__Tail {
+    .Snack__Text {
+      text-align: right;
+    }
+  }
+}
