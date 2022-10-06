@@ -1,5 +1,5 @@
 import { createServer } from "miragejs";
-import { FAKE_API_URI } from "../global/fakeApi";
+import { FAKE_API_URI } from "../global/api";
 import { AppSchema } from "./mockServerTypes";
 import { models } from "./models";
 import { TRIPS_SEED } from "./seeds";

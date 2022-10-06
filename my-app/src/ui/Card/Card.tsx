@@ -76,7 +76,7 @@ type CardRatingProps = RatingProps & {
 function CardRating({ title, rate }: CardRatingProps) {
   return (
     <Box className="Card__Rating" bg="white">
-      <Text fontSize="xs" className="Rating__Title">
+      <Text fontWeight="bold" fontSize="xs" className="Rating__Title">
         {title}
       </Text>
       <Box className="Rating__Stars">
