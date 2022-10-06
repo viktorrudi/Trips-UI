@@ -1,4 +1,5 @@
 import { createServer } from "miragejs";
+import { FAKE_API_URI } from "../global/fakeApi";
 import { AppSchema } from "./mockServerTypes";
 import { models } from "./models";
 import { TRIPS_SEED } from "./seeds";
@@ -14,11 +15,11 @@ export const startMockServer = () => {
 
     seeds(server) {
       log("Seeding...");
-      server.db.loadData(TRIPS_SEED);
+      server.db.loadData({ trips: TRIPS_SEED });
     },
 
     routes() {
-      this.urlPrefix = "https://fake-rest-api.com";
+      this.urlPrefix = FAKE_API_URI;
 
       this.get("/trips", (schema: AppSchema, _request) => ({
         data: schema.all("trip").models,
