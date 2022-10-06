@@ -22,7 +22,7 @@ export const TRIPS_SEED = [
     },
   },
   {
-    id: "3",
+    id: 3,
     name: "I dont know",
     image: "https://picsum.photos/id/228/300",
     emissions_offset: 3.5,

@@ -1,4 +1,10 @@
 .Shell {
   min-height: 100vh;
   // &__Layout {}
+  .Spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

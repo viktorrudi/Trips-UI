@@ -4,9 +4,9 @@ import {
   getName,
   getRating,
   Trip as TripEntity,
-} from "../features/trips/tripsEntity";
-import { getTripSubtitle } from "../features/trips/tripsPresenter";
-import { Card } from "../ui/Card/Card";
+} from "../../features/trips/tripsEntity";
+import { getTripSubtitle } from "../../features/trips/tripsPresenter";
+import { Card } from "../../ui/Card/Card";
 
 export function Trip(trip: TripEntity) {
   return (

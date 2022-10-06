@@ -1,8 +1,10 @@
 import { SimpleGrid, SimpleGridProps } from "@chakra-ui/react";
 
+import "./CardGrid.style.scss";
+
 type CardGridProps = SimpleGridProps;
 
-export function CardGrid({ children }: CardGridProps) {
+function CardGrid({ children }: CardGridProps) {
   return (
     <SimpleGrid
       className="CardGrid"
@@ -14,3 +16,5 @@ export function CardGrid({ children }: CardGridProps) {
     </SimpleGrid>
   );
 }
+
+export { CardGrid };

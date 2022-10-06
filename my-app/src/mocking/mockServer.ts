@@ -11,6 +11,7 @@ export const startMockServer = () => {
 
   return createServer({
     logging: true,
+    timing: 3000,
     models,
 
     seeds(server) {
