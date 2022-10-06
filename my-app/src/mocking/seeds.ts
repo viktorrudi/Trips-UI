@@ -13,7 +13,7 @@ export const TRIPS_SEED = [
   new FakeTrip()
     .setId("2")
     .setName("Swimming with dolphins")
-    .setImage("https://picsum.photos/id/101/300")
+    .setImage("https://picsum.photos/id/329/300")
     .setEmissionsOffset(2.35)
     .setRating(2.5)
     .setCountriesCount(2)
