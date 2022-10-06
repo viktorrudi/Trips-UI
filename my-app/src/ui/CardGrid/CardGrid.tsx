@@ -10,7 +10,7 @@ function CardGrid({ children }: CardGridProps) {
       className="CardGrid"
       columns={{ sm: 1, md: 2, xl: 3 }}
       spacing="8"
-      p={{ sm: 1, md: 5 }}
+      p={{ sm: 2, md: 5 }}
     >
       {children}
     </SimpleGrid>
