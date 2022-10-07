@@ -1,4 +1,4 @@
-# A project made in 4 hours
+# A small project made in 4 hours
 
 This project was a part of a technical task in an interview with a company for a role as a front end developer. There are many improvements which can be done, but this should serve as a representation of a solid base using a scaleable architecture.
 
